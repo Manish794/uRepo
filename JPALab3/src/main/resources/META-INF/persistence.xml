@@ -7,22 +7,22 @@
 	<persistence-unit name="JPALabPersistence"
 		transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<class>com.manish.jpa.app.entity.Employee</class>
+		<class>com.manish.jpa.app.entity.Student</class>
 
 		<properties>
 			<property name="javax.persistence.jdbc.driver"
-				value="com.mysql.cj.jdbc.Driver" />
+					  value="com.mysql.cj.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3306/ushadb" />
+					  value="jdbc:mysql://localhost:3306/ushadb" />
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password"
-				value="Aadi@2023" />
+					  value="Aadi@2023" />
 			<property name="hibernate.dialect"
-				value="org.hibernate.dialect.MySQL8Dialect" /> 
+					  value="org.hibernate.dialect.MySQL8Dialect" />
 
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 			<property name="hibernate.show_sql" value="true" />
-			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.format_sql" value="false" />
 		</properties>
 
 	</persistence-unit>
