@@ -1,0 +1,12 @@
+insert into mystudent (sid,sname,email,city) values (1,'Manish1','manish@gmail.com','BLR');
+insert into mystudent (sid,sname,email,city) values (2,'Raj','manish@gmail.com','CHE');
+insert into mystudent (sid,sname,email,city) values (3,'Rohan','manish@gmail.com','DEL');
+insert into mystudent (sid,sname,email,city) values (4,'Sohan','manish@gmail.com','BLR');
+insert into mystudent (sid,sname,email,city) values (5,'Kishor','manish@gmail.com','DEL');
+insert into mystudent (sid,sname,email,city) values (6,'Sri','manish@gmail.com','BLR');
+insert into mystudent (sid,sname,email,city) values (7,'Rajan','manish@gmail.com','BLR');
+insert into mystudent (sid,sname,email,city) values (8,'Manish','manish@gmail.com','HYD');
+insert into mystudent (sid,sname,email,city) values (9,'Kumar','manish@gmail.com','BLR');
+insert into mystudent (sid,sname,email,city) values (10,'Manish','manish@gmail.com','HYD');
+insert into mystudent (sid,sname,email,city) values (11,'Ram','manish@gmail.com','CHE');
+insert into mystudent (sid,sname,email,city) values (12,'Shyam','manish@gmail.com','CHE');
