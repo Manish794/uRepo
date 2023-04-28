@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="st1" class="com.manish.spring.to.Student">
+		<property name="sid" value="101" />
+		<property name="sname" value="Manish" />
+	</bean>
+
+	<bean id="emp1" class="com.manish.spring.to.Employee">
+		<property name="eid" value="9001" />
+		<property name="ename" value="Rahul" />
+	</bean>
+
+	<bean id="serv1" class="com.manish.spring.to.Service" autowire="byType" />
+	
+	<bean id="serv2" class="com.manish.spring.to.Service" autowire="byName" />
+
+</beans>
