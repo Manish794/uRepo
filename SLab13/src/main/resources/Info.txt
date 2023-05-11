@@ -1,0 +1,39 @@
+ContextPath : EMPTY
+http://localhost:8080/
+
+ContextPath: /myapp
+http://localhost:8080/myapp
+
+Port Number: 8099
+ContextPath: /myproj
+http://localhost:8099/myproj
+
+To reach upto Hello
+http://localhost:8099/myproj/users
+
+To reach upto Hai
+http://localhost:8099/myproj/books
+
+@GetMapping -> @RequestMapping(method= RequestMethod.GET)
+@GetMapping(value="/get-all-course") -> @RequestMapping(value="/get-all-course", method= RequestMethod.GET)
+
+@PostMapping -> @RequestMapping(method= RequestMethod.POST)
+@PostMapping -> @RequestMapping(method= RequestMethod.POST)
+
+@PutMapping -> @RequestMapping(method= RequestMethod.PUT)
+@PutMapping -> @RequestMapping(method= RequestMethod.PUT)
+
+@DeleteMapping -> @RequestMapping(method= RequestMethod.Delete)
+@DeleteMapping -> @RequestMapping(method= RequestMethod.Delete)
+
+
+CURD
+    Create  Post Mapping
+    Update  Put Mapping
+    Read    Get Mapping
+    Delete  Delete Mapping
+
+
+    http://localhost:8099/myproj/users/ABC123                   -> Path Variable
+    http://localhost:8099/myproj/users/email/manish@abc.com     -> Path Variable
+    http://localhost:8099/myproj/users/searchByPhone?phone=98989898           -> Query String (Request Param)
