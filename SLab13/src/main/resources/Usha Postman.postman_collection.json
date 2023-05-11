@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "fd512743-15ba-44d8-a5e7-2f9edaa2ac89",
+		"name": "Usha Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Books",
+			"item": [
+				{
+					"name": "Get All Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8099/myproj/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"myproj",
+								"books"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get All User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8099/myproj/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"myproj",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8099/myproj/users/c3a4ba56-b834-41b9-a4c7-1b555161b9b7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"myproj",
+								"users",
+								"c3a4ba56-b834-41b9-a4c7-1b555161b9b7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By Email",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8099/myproj/users/email/manish1@xyz.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"myproj",
+								"users",
+								"email",
+								"manish1@xyz.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By Phone",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8099/myproj/users/searchByPhone?phone=98989811",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"myproj",
+								"users",
+								"searchByPhone"
+							],
+							"query": [
+								{
+									"key": "phone",
+									"value": "98989811"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8099/myproj/users/c3a4ba56-b834-41b9-a4c7-1b555161b9b7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"myproj",
+								"users",
+								"c3a4ba56-b834-41b9-a4c7-1b555161b9b7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\": \"Manish Kumar\",\r\n    \"phone\": 98989811,\r\n    \"email\" : \"manish1@xyz.com\",\r\n    \"loginPassword\": \"mypass@1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8099/myproj/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"myproj",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": \"962f43e4-0bd3-4a92-a0b1-f36d298c87cc\",\r\n    \"fullName\": \"Manish Kumar\",\r\n    \"phone\": 98989812,\r\n    \"email\": \"rahul1@xyz.com\",\r\n    \"loginPassword\": \"mypass@2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8099/myproj/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"myproj",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Course",
+			"item": [
+				{
+					"name": "Get All Course",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8099/myproj/courses/get-all-course",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"myproj",
+								"courses",
+								"get-all-course"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
