@@ -6,7 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication(
 		scanBasePackages = {
 				"com.manish.spring.controller",
-				"com.manish.spring.service"
+				"com.manish.spring.service",
+				"com.manish.spring.config"
 		} )
 
 public class SLab13Application {

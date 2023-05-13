@@ -1,0 +1,4 @@
+CREATE TABLE myusers (userId varchar(50) PRIMARY KEY, fullName varchar(25), email varchar(50) UNIQUE, phone bigint, loginPassword varchar(20), creationDate date);
+
+
+CREATE TABLE mybooks (bookId varchar(50) PRIMARY KEY, bookName varchar(25), author varchar(50),publication varchar(25), yearOfPublication int, price double, creationDate date);
